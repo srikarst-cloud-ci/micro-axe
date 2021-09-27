@@ -11,7 +11,7 @@ import { MessageBroker } from "./rabbit";
 
 const broker = new MessageBroker();
 broker.getInstance().then((instance) => {
-  instance.subscribe("test", (msg: any, ack: any) => {
+  instance.subscribe("org:created", (msg: any, ack: any) => {
     console.log("Message:", msg.content.toString());
     ack();
   });
