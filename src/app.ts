@@ -9,13 +9,13 @@ import { NotFoundError } from "@srikar-test/common";
 
 import { MessageBroker } from "./rabbit";
 
-const broker = new MessageBroker();
-broker.getInstance().then((instance) => {
-  instance.subscribe("org:created", (msg: any, ack: any) => {
-    console.log("Message:", msg.content.toString());
-    ack();
-  });
-});
+// const broker = new MessageBroker();
+// broker.getInstance().then((instance) => {
+//   instance.subscribe("org:created", (msg: any, ack: any) => {
+//     console.log("Message:", msg.content.toString());
+//     ack();
+//   });
+// });
 
 const app = express();
 app.set("trust proxy", true);
