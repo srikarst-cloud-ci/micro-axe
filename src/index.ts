@@ -13,7 +13,7 @@ const start = async () => {
     new OrgCreatedListener(rabbitWrapper.client!).listen();
 
     await mongoose.connect(
-      "mongodb+srv://srikarst:srikar10@cluster0.gopsx.mongodb.net/cxaxedb?retryWrites=true&w=majority",
+      "mongodb+srv://srikarst:srikar10@cluster0.gopsx.mongodb.net/micro-axedb?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

@@ -1,1 +1,1 @@
-export const queueGroupName = "cxaxe-service";
+export const queueGroupName = "micro-axe-service";
