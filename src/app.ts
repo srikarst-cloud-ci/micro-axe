@@ -3,9 +3,9 @@ import cookieSession from "cookie-session";
 import "express-async-errors";
 import { json } from "body-parser";
 
-import { errorHandler } from "@srikar-test/common";
-import { currentUser } from "@srikar-test/common";
-import { NotFoundError } from "@srikar-test/common";
+import { errorHandler } from "@srikar-test/micro-common";
+import { currentUser } from "@srikar-test/micro-common";
+import { NotFoundError } from "@srikar-test/micro-common";
 
 const app = express();
 app.set("trust proxy", true);

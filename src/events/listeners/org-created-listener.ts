@@ -1,4 +1,4 @@
-import { Subjects, Listener, OrgCreatedEvent } from "@srikar-test/common";
+import { Subjects, Listener, OrgCreatedEvent } from "@srikar-test/micro-common";
 import { Organization } from "../../models/organization";
 
 export class OrgCreatedListener extends Listener<OrgCreatedEvent> {
